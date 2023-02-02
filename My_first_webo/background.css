@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Source+Sans+Pro&display=swap");
+:root {
+  font-family: "Merriweather", serif;
+  color: cornsilk;
+}
+body {
+  background-image: url(Aurora_camping.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.material-icons,
+.material-icons-outlined,
+.material-icons-two-tone {
+  border-style: none;
+  transform: scale(2);
+  margin-left: 2%;
+  color: rgb(101, 240, 171);
+}
+.material-icons-two-tone:nth-of-type(1) {
+  margin-left: 30%;
+}

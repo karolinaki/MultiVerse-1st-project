@@ -25,24 +25,17 @@ body {
 
 #navbar li {
   background-color: rgb(20, 124, 116);
-  padding: 3%;
+  padding: 2%;
   margin: 2%;
-  border-radius: 15px;
+  border-radius: 66px;
   border: 4px;
-  box-shadow: 0 0 5px 5px rgb(5, 44, 38);
+  box-shadow: 0 0 5px 5px rgb(4, 39, 34);
   text-shadow: 1px 1px 5px black;
-}
-/* Change the color of links on hover */
-#navbar a:hover {
-  background-color: #ddd;
-  border-radius: 12px;
-  color: black;
-  transition: 1s ease all;
 }
 
 /* Add an active class to highlight the current page */
-#navbar a.active {
-  background-color: #04aa6d;
+#navbar a:active {
+  background-color: #40d19c;
   color: white;
 }
 
@@ -50,9 +43,7 @@ body {
 #navbar .icon {
   display: none;
 }
-#intro {
-  font-size: 5vw;
-}
+
 #intro a {
   color: greenyellow;
 }
@@ -75,9 +66,90 @@ h1 {
   text-align: center;
 }
 
+div {
+  padding: 10% 10%;
+}
+
+picture {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  /* align-items: center;*/
+}
+picture p {
+  display: block;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 0.5%;
+}
+
+#linko {
+  text-align: center;
+}
+
+#blank {
+  padding: 0;
+  margin: 0;
+}
+#linko a {
+  color: #f5c8c8;
+  text-align: center;
+  text-decoration: none;
+}
+#instagram {
+  margin-top: 10%;
+  text-align: center;
+}
+
+section:nth-child(1) {
+  font-style: italic;
+}
+#mydog {
+  text-align: center;
+}
+#mydog img {
+  width: 50%;
+  place-self: center;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(94, 224, 218); /* Set a background color */
+  color: rgb(8, 54, 43); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+#socials {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#github {
+  filter: brightness(0.1);
+}
+
+img + a {
+  text-decoration: none;
+  color: aquamarine;
+}
+
 @media only screen and (min-width: 700px) {
   body {
     background-size: cover;
+    background-repeat: no-repeat;
     font-size: large;
   }
 
@@ -85,6 +157,7 @@ h1 {
     font-size: 2em;
   }
   #intro {
+    font-size: 1em;
     display: block;
     margin-left: 25%;
     width: 50%;
@@ -98,17 +171,20 @@ h1 {
     list-style: none;
     justify-content: space-evenly;
   }
+
+  div {
+    padding: 10% 10%;
+  }
 }
 @media only screen and (max-width: 350px) {
   #navbar ul {
     padding-left: -8px;
     flex-flow: row wrap;
-    align-items: stretch;
   }
   #navbar a {
     font-size: 15px;
   }
   #me {
-    width: 90%;
+    width: 50%;
   }
 }

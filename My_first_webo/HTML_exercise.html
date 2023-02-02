@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <title>Race Register Form</title>
+  </head>
+  <body>
+    <nav id="theNAV" style="background-color: rgb(228, 194, 252)">
+      <ul
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 10px 10px;
+          list-style-type: none;
+          font-size: medium; ;
+        "
+      >
+        <li><a href="karolinaki.html">Home</a></li>
+        <li><a href="forms.html">Learning HTML Forms</a></li>
+        <li><a href="tables.html">Learning Outlines</a></li>
+        <li><a href="my new html project.html">Using an API on a Page</a></li>
+        <li>
+          <a href="HTML_exercise.html">One of our projects implementing JS</a>
+        </li>
+        <li><a href="another.html">Playing more with effects</a></li>
+        <li>
+          <a href="background_play.html">Background property</a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/karol/Documents/firstproject/exercicio.html"
+            >Our JS exercise</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h1>Race Registration!</h1>
+    <form action="/forms.html">
+      <div>
+        <label for="First">First Name</label>
+        <input
+          type="text"
+          name="first_name"
+          id="First"
+          placeholder="Your First Name"
+        />
+        <label for="Last">Last Name</label>
+        <input
+          type="text"
+          name="last_name"
+          id="Last"
+          placeholder="Your Last Name"
+        />
+      </div>
+      <section>
+        <h2>Select a race</h2>
+        <div>
+          <div>
+            <input type="radio" name="races" id="fun_run" value="fun_run" />
+            <label for="fun_run">Fun Run 5k</label>
+          </div>
+          <div>
+            <input type="radio" name="races" id="half_mar" value="half_mar" />
+            <label for="half_mar">Half Marathon</label>
+          </div>
+          <div>
+            <input type="radio" name="races" id="full_mar" value="full_mar" />
+            <label for="full_mar">Full Marathon</label>
+          </div>
+        </div>
+      </section>
+      <section>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </section>
+
+      <div>
+        <label for="age">Select Age Group</label>
+        <select name="age" id="age">
+          <option value="underage">under 18</option>
+          <option value="eligible">over 18</option>
+          <option value="overage">over 65</option>
+        </select>
+      </div>
+      <button>Register</button>
+      <hr />
+      course links
+      <div>
+        <div>
+          <a href="my new html project.html" target="_blank"
+            >This is a random link</a
+          >
+        </div>
+        <div><a href="forms.html" target="_blank">Forms</a></div>
+        <div><a href="tables.html" target="_blank">Tables</a></div>
+        <a href="karolinaki.html" target="_blank">Karolinaki</a>
+      </div>
+    </form>
+  </body>
+</html>
