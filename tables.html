@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+p {outline-color:red;}
+
+p.dotted {outline-style: dotted;
+outline-width: 5px;
+outline-color:blue;}
+p.dashed {outline: 10px dashed darkmagenta}
+p.solid {outline:5px solid cadetblue;}
+p.double {outline:5px double crimson;}
+p.groove {border: 3px solid yellow;
+  margin: 30px; 
+  outline: 10px groove gray; }
+p.ridge {border: 3px solid black;
+  margin: 50px;
+  outline:10px ridge silver;
+outline-offset: 10px;}
+p.inset {outline-style: inset;
+outline-width: 5px;
+outline-color: darkmagenta;}
+p.outset {outline-style: outset;
+margin:50px;
+border-style:solid;
+border-color:blue;
+padding:5%;
+outline-width: 10px;
+outline-color: gray;}
+</style>
+   <body>
+    <nav id="theNAV" style="background-color: rgb(228, 194, 252)">
+      <ul
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 10px 10px;
+          list-style-type: none;
+          font-size: medium; ;
+        "
+      >
+        <li><a href="karolinaki.html">Home</a></li>
+        <li><a href="forms.html">Learning HTML Forms</a></li>
+        <li><a href="tables.html">Learning Outlines</a></li>
+        <li><a href="my new html project.html">Using an API on a Page</a></li>
+        <li>
+          <a href="HTML_exercise.html">One of our projects implementing JS</a>
+        </li>
+        <li><a href="another.html">Playing more with effects</a></li>
+        <li>
+          <a href="background_play.html">Background property</a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/karol/Documents/firstproject/exercicio.html"
+            >Our JS exercise</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h2>The outline-style Property</h2>
+
+<p class="dotted">A dotted outline</p>
+<p class="dashed">A dashed outline</p>
+<p class="solid">A solid outline</p>
+<p class="double">A double outline</p>
+<p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+<p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+<p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+<p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+
+   <style>
+      table {
+        background-color: brown;
+        border: 1px solid black;
+      }
+      td {
+        border: darkblue;
+        background-color: wheat;
+      }
+    </style>
+    <a href="forms.html">Go to Forms</a>
+    <a href="karolinaki.html">Go to Karolinaki</a>
+    <table>
+      <thead style="color: wheat;">
+        <tr>
+            <th colspan="2">Animals I know</th>
+        </tr>
+        <tr>
+          <th>Chickens</th>
+          <th>Dogs</th>
+        </tr>
+      </thead>
+      <tbody style="text-align: center">
+        <tr>
+          <td>Brown Chickin</td>
+          <td>Labrador</td>
+        </tr>
+        <tr>
+          <td>White Chickin</td>
+          <td>Shi-tzu</td>
+        </tr>
+        <tr>
+          <td>Yellow Chickin</td>
+          <td>Border Collie</td>
+        </tr>
+      </tbody>
+    </table>
+  </head>
+  </body>
+</html>

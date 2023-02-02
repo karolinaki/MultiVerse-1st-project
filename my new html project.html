@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav id="theNAV" style="background-color: rgb(228, 194, 252)">
+      <ul
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 10px 10px;
+          list-style-type: none;
+          font-size: medium; ;
+        "
+      >
+        <li><a href="karolinaki.html">Home</a></li>
+        <li><a href="forms.html">Learning HTML Forms</a></li>
+        <li><a href="tables.html">Learning Outlines</a></li>
+        <li><a href="my new html project.html">Using an API on a Page</a></li>
+        <li>
+          <a href="HTML_exercise.html">One of our projects implementing JS</a>
+        </li>
+        <li><a href="another.html">Playing more with effects</a></li>
+        <li>
+          <a href="background_play.html">Background property</a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/karol/Documents/firstproject/exercicio.html"
+            >Our JS exercise</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h1>Let's play with the tvmaze API!</h1>
+    <p>
+      Hi how are you! Type a Show or a random word and see if it's already a
+      show!
+    </p>
+
+    <button id="clear">Clear the results!</button>
+    <a href="karolinaki.html">go back home</a>
+    <form id="TV">
+      <input
+        type="text"
+        name="query"
+        id="query"
+        placeholder="Search TV shows"
+      />
+      <button>Search!</button>
+      <div id="results" style="margin: 5px"></div>
+      <p id="Title"></p>
+    </form>
+    <button id="clear">Clear the results!</button>
+    <script src="apijs.js"></script>
+    <a href="karolinaki.html">go back home</a>
+  </body>
+</html>

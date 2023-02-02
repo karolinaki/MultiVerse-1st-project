@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      function show_value(x) {
+        document.getElementById("slider_value").innerHTML = x;
+      }
+    </script>
+  </head>
+  <body>
+    <nav id="theNAV" style="background-color: rgb(228, 194, 252)">
+      <ul
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          padding: 10px 10px;
+          list-style-type: none;
+          font-size: medium; ;
+        "
+      >
+        <li><a href="karolinaki.html">Home</a></li>
+        <li><a href="forms.html">Learning HTML Forms</a></li>
+        <li><a href="tables.html">Learning Outlines</a></li>
+        <li><a href="my new html project.html">Using an API on a Page</a></li>
+        <li>
+          <a href="HTML_exercise.html">One of our projects implementing JS</a>
+        </li>
+        <li><a href="another.html">Playing more with effects</a></li>
+        <li>
+          <a href="background_play.html">Background property</a>
+        </li>
+        <li>
+          <a href="file:///C:/Users/karol/Documents/firstproject/exercicio.html"
+            >Our JS exercise</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h1>Forms</h1>
+    <form action="https://www.google.com/search?" target="_blank">
+      <label for="text">Try searching the Google</label>
+      <input
+        id="text"
+        type="text"
+        name="q"
+        placeholder="opens a new tab, relax, geez"
+      /><br /><br />
+      <label for="color">Pick a colour</label>
+      <input type="color" id="color" /><br /><br />
+      <label for="Enjoy">Enjoying Yourself Yet?</label>
+      <input type="radio" id="Enjoy" /><br /><br />
+      <select name="gayness" id="gayness">
+        <option value="NA">Who are you?</option>
+        <option value="rando">A rando</option>
+        <option value="employer">An employer</option>
+        <option value="dad">Your dad</option>
+      </select>
+      <br /><br />
+      <div>
+        <label for="numba">Give us a numba, then</label>
+        <input
+          type="number"
+          id="numba"
+          placeholder="use the arrows, pal"
+        /><br /><br />
+        <h2>dropdowns and text boxes</h2>
+        <label for="some_amount">What's your amount</label>
+        <div>
+          <input
+            type="range"
+            id="some_amount"
+            name="amount"
+            min="10"
+            max="100"
+            value="20"
+            onchange="show_value(this.value);"
+          />
+        </div>
+        <span id="slider_value" style="color: rgb(39, 141, 30)"></span>
+        <div>I added a JavaScript function to show the number you chose x</div>
+      </div>
+      <br /><br />
+      <label for="comment" style="background: tomato">Feedback</label><br />
+      <textarea
+        name="comment"
+        id="comment"
+        cols="30"
+        rows="10"
+        placeholder="Give us some feedback without being horrible"
+      ></textarea>
+      <h2>Animals?</h2>
+      <label for="Dog">Dog</label>
+      <input type="radio" name="boba" id="Dog" value="Dog" />
+      <label for="Cat">Cat</label>
+      <input type="radio" name="boba" id="Cat" value="Dog" />
+      <label for="Bird">Bird</label>
+      <input type="radio" name="boba" id="Bird" value="Bird" />
+      <label for="Ferret">Ferret</label>
+      <input type="radio" name="boba" id="Ferret" />
+      <br /><br />
+      <label for="check"
+        >I agree to everything for as long as I live so help me God</label
+      >
+      <input type="checkbox" name="check" /><br /><br />
+      <button>Submit this form</button>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" placeholder="username" id="username" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password" />
+      </div>
+      <br />
+    </form>
+    <hr />
+    <a href="my new html project.html" target="_blank">This is a random link</a
+    ><br />
+    <a href="tables.html" target="_blank">Tables</a><br />
+    <a href="karolinaki.html" target="_blank">Karolinaki</a><br />
+    <a href="HTML_exercise.html" target="_blank">Final HTML exercise</a>
+  </body>
+</html>
