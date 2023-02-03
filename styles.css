@@ -134,14 +134,15 @@ section:nth-child(1) {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #github {
   filter: brightness(0.1);
 }
 
-img + a {
+img + a,
+p > a {
   text-decoration: none;
   color: aquamarine;
 }
